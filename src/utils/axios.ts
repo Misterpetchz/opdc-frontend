@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { HOST_API } from '@/global-config'
+import { HOST_API } from '../global-config'
 
 const axiosInstance = axios.create({
   baseURL: HOST_API,
@@ -10,5 +10,6 @@ const axiosInstance = axios.create({
 })
 
 // Interceptors response
+export default axiosInstance
 
 export const endpoints = {}
